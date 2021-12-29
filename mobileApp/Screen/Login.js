@@ -1,10 +1,14 @@
 import React from 'react';
 import {View, Text, Button} from 'react-native';
-
+import Header from '../Components/Header';
 const Login = props => {
   return (
     <View>
-      <Text>Login Screen</Text>
+      <Header />
+      <Button
+        title="Login"
+        onPress={() => props.navigation.navigate('SignUp')}
+      />
     </View>
   );
 };
